@@ -14,7 +14,8 @@
                     <input id="timepicker" type="text" class="form-control input-small">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
                 </div>
-                <button class="btn btn-success pull-right">Order</button>
+                <button ng-if="ordered !== true" type="submit" class="btn btn-success pull-right">Order</button>
+                <div ng-if="ordered === true" type="button" id="orderPlaced" class="btn btn-default pull-right" disabled="">Order Placed</div>
             </div>
         </form>
     </div>

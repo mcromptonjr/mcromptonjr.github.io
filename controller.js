@@ -101,8 +101,7 @@ cafeteriaControllers.controller('OrderSubmitCtrl' , ['$scope', '$location', '$fi
                 img: img,
                 status: status
             });
-
-            $location.path('/stores')
+            $scope.ordered = true;
         };
     }
 ]);

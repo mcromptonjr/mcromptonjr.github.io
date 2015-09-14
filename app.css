@@ -61,3 +61,7 @@ img.userImg {
 #details .timepicker {
   margin-bottom: 10px;
 }
+
+#details #orderPlaced {
+  cursor: default;
+}
