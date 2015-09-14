@@ -1,0 +1,8 @@
+<div id="stores" class="center-block">
+    <h2 class="text-center">Stores</h2>
+    <div class="row" >
+        <div ng-repeat="store in stores" class="storeImg col-xs-6 col-md-3" ><a class="thumbnail" title="{{store.name}}" href="#/stores/{{store.$id}}">
+            <img class="img-responsive" src="{{store.img}}" alt="{{store.name}}"></a>
+        </div>
+    </div>
+</div>

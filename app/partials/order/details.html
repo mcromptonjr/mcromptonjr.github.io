@@ -1,0 +1,22 @@
+<div id="details" class="pageContainer center-block">
+    <div id="top">
+        <img class="detailsImg pull-left img-rounded" src="{{details.img}}">
+        <div id="info">
+            <h2 id="name">{{details.name}}</h2>
+            <hr>
+            <h4 id="description">{{details.description}}</h4>
+        </div>
+    </div>
+    <div id="bottom">
+        <form id="detailsForm" ng-submit="order()" ng-controller="OrderSubmitCtrl   ">
+            <div id="detailsFormContainer" class="pull-right">
+                <div class="input-group bootstrap-timepicker timepicker">
+                    <input id="timepicker" type="text" class="form-control input-small">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+                </div>
+                <button class="btn btn-success pull-right">Order</button>
+            </div>
+        </form>
+    </div>
+</div>
+

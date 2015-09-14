@@ -1,0 +1,63 @@
+/* app css stylesheet */
+
+/* pos styles */
+#pos, .pageContainer {
+  max-width: 990px;
+}
+
+.order {
+  max-height: 140px;
+}
+
+img.userImg {
+  max-height: 73px;
+  margin-right: 10px;
+}
+
+#food {
+  color: #555;
+}
+
+#pickupTime {
+  margin-right: 20px;
+}
+
+/* login styles */
+#form-signin {
+  max-width: 330px;
+}
+
+#form-signin input {
+  margin-bottom: 10px;
+}
+
+/* stores styles */
+#stores .storeImg img {
+  max-height: 70px;
+}
+
+/* food styles */
+#food .foodImg img {
+  max-height: 140px;
+}
+
+/* details styles */
+#details .detailsImg {
+  margin-right: 10px;
+}
+
+#details #description {
+  padding-left: 10px;
+}
+
+#details #detailsFormContainer {
+  max-width: 200px;
+}
+
+#details hr {
+  border-color: #333;
+}
+
+#details .timepicker {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,14 @@
+<header id="header" class="navbar navbar-static-top" role="banner">
+    <div class="container">
+        <a class="navbar-brand" href="#/stores"><strong>UCB Cafeteria</strong></a>
+        <nav class="collapse navbar-collapse">
+            <ul ng-if="cashier.$value == true" class="nav navbar-nav">
+                <li><a class="navbar-link" href="#/pos">Orders</a></li>
+            </ul>
+            <ul ng-if="user !== null" class="nav navbar-nav navbar-right">
+                <li><span class="navbar-text">{{user.first}}</span></li>
+                <li><a ng-click="signOut()" href="">Sign Out</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>

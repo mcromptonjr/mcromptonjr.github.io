@@ -1,0 +1,22 @@
+
+<div id="pos" class="center-block">
+    <h2 class="text-center">Orders</h2>
+
+    <ul>
+        <li class="list-unstyled" ng-repeat="order in orders | orderBy:food" ng-if="order.status !== 'Missed'">
+            <div class="panel panel-default panel-body order">
+
+                <div class="pull-right">
+                    <a class="btn btn-success btn-block" ng-click="pickUp(order.$id)">Picked Up</a>
+                    <a class="btn btn-danger btn-block" ng-click="missed(order.$id)">Missed</a>
+                </div>
+                <h3 id="pickupTime" class="pull-right">{{order.time}}</h3>
+
+                <img src="{{order.img}}" class="pull-left img-responsive img-circle userImg">
+                <h4 id="name">{{order.name}}</h4>
+                <h5 id="food">{{order.food}}</h5>
+            </div>
+        </li>
+    </ul>
+</div>
+

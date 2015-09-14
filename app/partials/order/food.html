@@ -1,0 +1,8 @@
+<div id="food" class="center-block">
+    <h2 class="text-center">Menu</h2>
+    <div class="row" >
+        <div ng-repeat="f in food" class="foodImg col-xs-6 col-md-3" ><a class="thumbnail" title="{{f.name}}" href="#/stores/order/{{f.$id}}">
+            <img class="img-responsive" src="{{f.img}}" alt="{{f.name}}"></a>
+        </div>
+    </div>
+</div>
